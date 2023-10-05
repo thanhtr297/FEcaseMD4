@@ -168,11 +168,14 @@
                     </div>
                 </div>
                 <form>
-                    <input type="text">
+                    <label>
+                        <input type="text" id="search" placeholder="Tìm theo tên">
+                    </label>
+                    <button type="submit" onclick="searchByName()">Tìm kiếm</button>
                 </form>
 <!--                <button onclick="displayFilter">Bo loc</button>-->
                 <form  action="" class="form-input" enctype="multipart/form-data" >
-                    <div class="col-md-7 mb-4" >
+                    <div class="col-md-12 mb-4" style="display: flex" >
                         <div class="form-outline">
                             <div id="city"></div>
                         </div>
@@ -182,9 +185,11 @@
                         <div class="form-outline">
                             <div id="status"></div>
                         </div>
-                        <div class="form-outline">
-                            <label for="minPrice"></label><input type="number" id="minPrice">
-                            <label for="maxPrice"></label><input type="number" id="maxPrice">
+                        <div class="form-outline" >
+                            <label for="minPrice">Giá từ</label><input type="number" id="minPrice">
+                        </div>
+                        <div>
+                            <label for="maxPrice"> Đến </label><input type="number" id="maxPrice">
                         </div>
                         <div class="form-outline">
                             <label for="bathroom">Phòng tắm</label><input type="number" id="bathroom">
@@ -192,8 +197,13 @@
                         <div class="form-outline">
                             <label for="bedroom">Phòng ngủ</label><input type="number" id="bedroom">
                         </div>
+                        <div class="form-outline">
+                            <label></label>
+                            <button type="submit" onclick="Filter()">Search</button>
+                        </div>
+
                     </div>
-                    <button type="submit" onclick="Filter()">Search</button>
+
                 </form>
 
             </div>
