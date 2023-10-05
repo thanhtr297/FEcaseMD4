@@ -167,15 +167,18 @@
                         <h1 class="display-5 mb-3">Các homestay của chúng tôi</h1>
                     </div>
                 </div>
-                <form>
+                <form style="display: flex">
                     <label>
                         <input type="text" id="search" placeholder="Tìm theo tên">
                     </label>
-                    <button type="submit" onclick="searchByName()">Tìm kiếm</button>
+                    <button onclick="searchByName()" class="btn-sm-square bg-white rounded-circle ms-3" type="submit">
+                        <small class="fa fa-search text-body"></small>
+                    </button>
+<!--                    <button type="submit" onclick="searchByName()">Tìm kiếm</button>-->
                 </form>
 <!--                <button onclick="displayFilter">Bo loc</button>-->
                 <form  action="" class="form-input" enctype="multipart/form-data" >
-                    <div class="col-md-12 mb-4" style="display: flex" >
+                    <div class="col-md-12 mb-4" style="display: flex ;margin-top: 5%" >
                         <div class="form-outline">
                             <div id="city"></div>
                         </div>
@@ -185,21 +188,39 @@
                         <div class="form-outline">
                             <div id="status"></div>
                         </div>
-                        <div class="form-outline" >
-                            <label for="minPrice">Giá từ</label><input type="number" id="minPrice">
-                        </div>
-                        <div>
-                            <label for="maxPrice"> Đến </label><input type="number" id="maxPrice">
+                        <div class="form-outline">
+                            <label for="price" class="fw-bold">Giá cho thuê:</label>
+                            <select id="price">
+                                <option value="1000000-3000000">1 triệu - 3 triệu</option>
+                                <option value="3000000-5000000">3 triệu - 5 triệu</option>
+                                <option value="5000000-7000000">5 triệu - 7 triệu</option>
+                                <option value="7000000-10000000">7 triệu - 10 triệu</option>
+                            </select>
                         </div>
                         <div class="form-outline">
-                            <label for="bathroom">Phòng tắm</label><input type="number" id="bathroom">
+                            <label for="bathroom" class="fw-bold">Phòng vệ sinh</label>
+                            <select id="bathroom">
+                                <option value="1">1 phòng</option>
+                                <option value="2">2 phòng</option>
+                                <option value="3">3 phòng</option>
+                                <option value="4">4 phòng</option>
+                            </select>
                         </div>
                         <div class="form-outline">
-                            <label for="bedroom">Phòng ngủ</label><input type="number" id="bedroom">
+                            <label for="bedroom" class="fw-bold">Phòng ngủ</label>
+                            <select id="bedroom">
+                                <option value="1">1 phòng</option>
+                                <option value="2">2 phòng</option>
+                                <option value="3">3 phòng</option>
+                                <option value="4">4 phòng</option>
+                                <option value="5">5 phòng</option>
+                            </select>
                         </div>
                         <div class="form-outline">
-                            <label></label>
-                            <button type="submit" onclick="Filter()">Search</button>
+                            <button onclick="Filter()" class="btn-sm-square bg-white rounded-circle ms-3" type="submit">
+                                <small class="fa fa-search text-body"></small>
+                            </button>
+<!--                            <button type="submit" onclick="Filter()">Search</button>-->
                         </div>
 
                     </div>
