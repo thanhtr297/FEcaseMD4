@@ -43,65 +43,7 @@
 
 
 <!-- Navbar Start -->
-<div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-    <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-        <div class="col-lg-6 px-5 text-start" style="margin-left: 55%">
-            <small><i class="fa fa-map-marker-alt me-2"></i>CodeGym Ha Noi, Viet Nam</small>
-            <small class="ms-4"><i class="fa fa-envelope me-2"></i>Nhom2dangcapprovjp@gmail.com</small>
-        </div>
-
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="fw-bold text-primary m-0">L<span class="text-secondary">ux</span>Stay</h1>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
-                <a href="about.html" class="nav-item nav-link">Thông tin</a>
-                <a href="product.html" class="nav-item nav-link">Phòng</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý User</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="" class="dropdown-item">Xem user đang hoạt động</a>
-                        <a href="" class="dropdown-item"></a>
-                    </div>
-                </div>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý homestay</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="" class="dropdown-item">Thêm room</a>
-                        <a href="" class="dropdown-item">Hiển thị room</a>
-                    </div>
-                </div>
-                <a href="testimonial.html" class="nav-item nav-link">Phản hồi</a>
-                <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
-            </div>
-            <div class="d-none d-lg-flex ms-2">
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                    <small class="fa fa-search text-body"></small>
-                </a>
-                <div class="nav-item dropdown">
-                    <a href="#" class=" nav-link dropdown-toggle" data-bs-toggle="dropdown">Hi ... user</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="" class="dropdown-item">Profile</a>
-                        <a href="" class="dropdown-item">Đăng xuất</a>
-                    </div>
-                </div>
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="login.html">
-                    <small class="fa fa-user text-body"></small>
-                </a>
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                    <small class="far fa-heart"> </small>
-                </a>
-            </div>
-        </div>
-    </nav>
-</div>
+<div id="header"></div>
 <!-- Navbar End -->
 
 
@@ -115,10 +57,8 @@
                     <div class="container">
                         <div class="row justify-content-start">
                             <div class="col-lg-7">
-                                <h1 class="display-2 mb-5 animated slideInDown" style="color: cyan">Home Stay khiến
+                                <h1 class="display-2 mb-5 animated slideInDown" style="color: crimson">Home Stay khiến
                                     cuộc sống tươi đẹp hơn!</h1>
-                                <!--                                    <a href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">HomeStay</a>-->
-                                <!--                                    <a href="" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">Room</a>-->
                             </div>
 
                         </div>
@@ -167,7 +107,7 @@
                         <h1 class="display-5 mb-3">Các homestay của chúng tôi</h1>
                     </div>
                 </div>
-                <form style="display: flex">
+                <form>
                     <label>
                         <input type="text" id="search" placeholder="Tìm theo tên">
                     </label>
@@ -178,37 +118,38 @@
                 </form>
 <!--                <button onclick="displayFilter">Bo loc</button>-->
                 <form  action="" class="form-input" enctype="multipart/form-data" >
-                    <div class="col-md-12 mb-4" style="display: flex ;margin-top: 5%" >
-                        <div class="form-outline">
+                    <div class="col-md-12 mb-4" style="display: flex;margin-top: 5%" >
+                        <div class="form-outline col-md-2 mb-4">
                             <div id="city"></div>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <div id="district"></div>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <div id="status"></div>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <label for="price" class="fw-bold">Giá cho thuê:</label>
-                            <select id="price">
+                            <select id="price" class="form-select">
                                 <option value="1000000-3000000">1 triệu - 3 triệu</option>
                                 <option value="3000000-5000000">3 triệu - 5 triệu</option>
                                 <option value="5000000-7000000">5 triệu - 7 triệu</option>
                                 <option value="7000000-10000000">7 triệu - 10 triệu</option>
                             </select>
                         </div>
-                        <div class="form-outline">
+
+                        <div class="form-outline col-md-2 mb-4">
                             <label for="bathroom" class="fw-bold">Phòng vệ sinh</label>
-                            <select id="bathroom">
+                            <select id="bathroom" class="form-select">
                                 <option value="1">1 phòng</option>
                                 <option value="2">2 phòng</option>
                                 <option value="3">3 phòng</option>
                                 <option value="4">4 phòng</option>
                             </select>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <label for="bedroom" class="fw-bold">Phòng ngủ</label>
-                            <select id="bedroom">
+                            <select id="bedroom" class="form-select">
                                 <option value="1">1 phòng</option>
                                 <option value="2">2 phòng</option>
                                 <option value="3">3 phòng</option>
@@ -234,6 +175,8 @@
 
                     </div>
                 </div>
+                <hr>
+                <div id="footPage" style="text-align: center"></div>
 
             </div>
         </div>
@@ -305,59 +248,7 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h1 class="fw-bold text-primary mb-4">L<span class="text-secondary">ux</span>Stay</h1>
-                    <p>Kiếm chỗ ở thật đơn giản</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i
-                                class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Địa chỉ</h4>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>CodeGym Ha Noi, Viet Nam</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+84-961020994</p>
-                    <p><i class="fa fa-envelope me-3"></i>Nhom2vjppro@example.com</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Link nhanh</h4>
-                    <a class="btn btn-link" href="">Về chúng tôi</a>
-                    <a class="btn btn-link" href="">Liên hệ</a>
-                    <a class="btn btn-link" href="">Phản hồi</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4"> Lời cảm ơn</h4>
-                    <p>Sự đóng góp của các bạn là sự thúc ẩy phát triển cho chúng tôi</p>
-                    <!--                    <div class="position-relative mx-auto" style="max-width: 400px;">-->
-                    <!--                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">-->
-                    <!--                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>-->
-                    <!--                    </div>-->
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="index.html">LuxStay</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">group 2</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div id="footer"></div>
     <!-- Footer End -->
 
 
@@ -378,6 +269,7 @@
     <script src="js/main.js"></script>
     <script src="js/address.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/layout.js"></script>
 </div>
 </body>
 

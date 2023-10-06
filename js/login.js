@@ -6,7 +6,7 @@ function login() {
         username: username,
         password: password
     }
-
+    localStorage.setItem("account", username)
     $.ajax({
         headers: {
             "Content-Type": "application/json"
@@ -17,6 +17,19 @@ function login() {
         success: function (data) {
             localStorage.setItem("token", data.token)
             window.location.href = "index.html"
+            getAcc()
         }
     })
+}
+
+function getAcc (){
+    let acc = localStorage.getItem("acc");
+    var settings = {
+        "url": `http://localhost:8080/api/homes/findAcc/${acc}`,
+        "method": "GET",
+        "timeout": 0,
+    };
+
+    $.ajax(settings).done(function (response) {
+    });
 }
