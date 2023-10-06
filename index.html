@@ -63,41 +63,34 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
                 <a href="about.html" class="nav-item nav-link">Thông tin</a>
-                <a href="product.html" class="nav-item nav-link">Phòng</a>
+                <a href="room.html" class="nav-item nav-link">Phòng</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý User</a>
                     <div class="dropdown-menu m-0">
-                        <a href="" class="dropdown-item">Xem user đang hoạt động</a>
+                        <a href="" class="dropdown-item">Xem user</a>
                         <a href="" class="dropdown-item"></a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Quản lý homestay</a>
                     <div class="dropdown-menu m-0">
-                        <a href="" class="dropdown-item">Thêm room</a>
+                        <a href="createHomeStay.html" class="dropdown-item">Thêm room</a>
                         <a href="" class="dropdown-item">Hiển thị room</a>
                     </div>
                 </div>
                 <a href="testimonial.html" class="nav-item nav-link">Phản hồi</a>
                 <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                <a href="login.html" class="nav-item nav-link">Đăng nhập</a>
+                <a  class="nav-item nav-link" href="signin.html">Đăng ký</a>
             </div>
             <div class="d-none d-lg-flex ms-2">
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                    <small class="fa fa-search text-body"></small>
-                </a>
                 <div class="nav-item dropdown">
-                    <a href="#" class=" nav-link dropdown-toggle" data-bs-toggle="dropdown">Hi ... user</a>
+                    <a href="#" class=" nav-link dropdown-toggle" data-bs-toggle="dropdown"><small class="fa fa-user text-body"></small></a>
                     <div class="dropdown-menu m-0">
                         <a href="" class="dropdown-item">Profile</a>
                         <a href="" class="dropdown-item">Đăng xuất</a>
                     </div>
                 </div>
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="login.html">
-                    <small class="fa fa-user text-body"></small>
-                </a>
-                <a class="btn-sm-square bg-white rounded-circle ms-3" href="">
-                    <small class="far fa-heart"> </small>
-                </a>
             </div>
         </div>
     </nav>
@@ -178,37 +171,38 @@
                 </form>
 <!--                <button onclick="displayFilter">Bo loc</button>-->
                 <form  action="" class="form-input" enctype="multipart/form-data" >
-                    <div class="col-md-12 mb-4" style="display: flex-;margin-top: 5%" >
-                        <div class="form-outline">
+                    <div class="col-md-12 mb-4" style="display: flex;margin-top: 5%" >
+                        <div class="form-outline col-md-2 mb-4">
                             <div id="city"></div>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <div id="district"></div>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <div id="status"></div>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <label for="price" class="fw-bold">Giá cho thuê:</label>
-                            <select id="price">
+                            <select id="price" class="form-select">
                                 <option value="1000000-3000000">1 triệu - 3 triệu</option>
                                 <option value="3000000-5000000">3 triệu - 5 triệu</option>
                                 <option value="5000000-7000000">5 triệu - 7 triệu</option>
                                 <option value="7000000-10000000">7 triệu - 10 triệu</option>
                             </select>
                         </div>
-                        <div class="form-outline">
+
+                        <div class="form-outline col-md-2 mb-4">
                             <label for="bathroom" class="fw-bold">Phòng vệ sinh</label>
-                            <select id="bathroom">
+                            <select id="bathroom" class="form-select">
                                 <option value="1">1 phòng</option>
                                 <option value="2">2 phòng</option>
                                 <option value="3">3 phòng</option>
                                 <option value="4">4 phòng</option>
                             </select>
                         </div>
-                        <div class="form-outline">
+                        <div class="form-outline col-md-2 mb-4">
                             <label for="bedroom" class="fw-bold">Phòng ngủ</label>
-                            <select id="bedroom">
+                            <select id="bedroom" class="form-select">
                                 <option value="1">1 phòng</option>
                                 <option value="2">2 phòng</option>
                                 <option value="3">3 phòng</option>
