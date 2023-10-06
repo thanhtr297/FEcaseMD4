@@ -164,7 +164,7 @@ function footter() {
 function slider(){
     document.getElementById("slide").innerHTML=slide
 }
-footter()
+    footter()
 head()
 slider()
 
