@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body onload="displayAll1()">
+<div id="homes"></div>
+<div>
+    <form id="form">
+        <h2>Form create</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name"><br>
+
+        <label for="bedroom_count">Bedroom</label>
+        <input type="number" id="bedroom_count"><br>
+
+        <label for="bathroom_count">Bathroom</label>
+        <input type="number" id="bathroom_count"><br>
+
+        <label for="description">Description</label>
+        <input type="text" id="description"><br>
+
+        <label for="price">Price</label>
+        <input type="number" id="price"><br>
+
+        <label for="file">Image</label>
+        <input type="file" id="file" multiple><br>
+
+        <div class="form-outline">
+            <div id="city"></div>
+        </div>
+        <div class="form-outline">
+            <div id="district"></div>
+        </div>
+        <div class="form-outline">
+            <div id="status"></div>
+        </div>
+
+        <button onclick="save()">Create</button>
+    </form>
+</div>
+</body>
+<script src="js/home.js"></script>
+<!--<script src="js/address.js"></script>-->
+
+
+</html>
